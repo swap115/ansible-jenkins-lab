@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'master',
-                url: 'https://github.com/hkshitesh/ansible-jenkins-lab.git'
+                url: 'https://github.com/swap115/ansible-jenkins-lab.git'
             }
         }
         stage('Run Ansible Playbook') {
