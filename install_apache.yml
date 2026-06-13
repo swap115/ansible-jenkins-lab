@@ -1,5 +1,5 @@
 ---
-- name: Install and restart Apache2 using command module by Hitesh
+- name: Install and restart Apache2 using command module by Swapnil
   hosts: webservers
   connection: local
   become: yes
