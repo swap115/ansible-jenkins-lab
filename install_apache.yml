@@ -12,10 +12,10 @@
     - name: Install apache2 package
       command: apt-get install -y apache2
 
-    - name: Change Apache Listen port in ports.conf (80 -> 8080)
+    - name: Change Apache Listen port in ports.conf (9090 -> 8081)
       command: sed -i 's/^Listen 80/Listen 9090/' /etc/apache2/ports.conf
 
-    - name: Change Apache VirtualHost port in default site (80 -> 8080)
+    - name: Change Apache VirtualHost port in default site (9090 -> 8081)
       command: sed -i 's/<VirtualHost \*:80>/<VirtualHost \*:9090>/' /etc/apache2/sites-available/000-default.conf
 
     - name: Start apache2 service
